@@ -16,7 +16,8 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
       if !@@cart.empty?
-        
+        @@cart.each do |el|
+          r
     else
       resp.write "Path Not Found"
     end
@@ -33,9 +34,7 @@ class Application
   end
   
   def display_cart
-    if @@cart.include?(search_cart)
-      @@cart.each do |el|
-          resp.write "#{el}\n"
+    esp.write "#{el}\n"
       end
     else
       resp.write ""
