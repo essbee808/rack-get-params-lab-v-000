@@ -40,5 +40,7 @@ class Application
   end
   
   def add_to_cart(item)
+    
+  end
 
 end
