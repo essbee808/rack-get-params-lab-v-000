@@ -40,7 +40,7 @@ class Application
   end
   
   def add_to_cart(item)
-    
+    if @@items.include?(item)
   end
 
 end
