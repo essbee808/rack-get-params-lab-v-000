@@ -39,6 +39,6 @@ class Application
     end
   end
   
-  def 
+  def check_
 
 end
