@@ -32,7 +32,7 @@ class Application
     end
   end
   
-  def show_items
+  def display_cart
     @@cart.each do |el|
         resp.write "#{el}\n"
     end
