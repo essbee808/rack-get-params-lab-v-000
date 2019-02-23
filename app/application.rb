@@ -32,11 +32,5 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
-  
-  def display_cart
-    esp.write "#{el}\n"
-      end
-    else
-      resp.write ""
-  end
+
 end
