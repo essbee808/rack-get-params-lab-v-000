@@ -41,8 +41,8 @@ class Application
   
   def add_to_cart(add_item)
     if @@items.include?(add_item)
-      @@cart << item
-      resp.write "added #{item}"
+      @@cart << add_item
+      resp.write "added #{add_item}"
     else
       return "We don't have that item"
     end
