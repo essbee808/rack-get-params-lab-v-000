@@ -1,6 +1,9 @@
+require 'pry'
+
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
+  @@cart = []
 
   def call(env)
     resp = Rack::Response.new
@@ -13,6 +16,9 @@ class Application
     elsif req.path.match(/search/)
       search_term = req.params["q"]
       resp.write handle_search(search_term)
+    elsif req.path.match(/cart/)
+      cart_item = req.params["q"]
+      handle_cart(cart_item)
     else
       resp.write "Path Not Found"
     end
@@ -25,6 +31,17 @@ class Application
       return "#{search_term} is one of our items"
     else
       return "Couldn't find #{search_term}"
+    end
+  end
+  
+  def handle_cart(cart_item)
+      binding.pry
+    if @@cart.include?(cart_item)
+      @@cart.each do |el|
+        resp.write "#{el}\n"
+      end
+    else
+      resp.write "Your cart is empty."
     end
   end
 end
