@@ -33,9 +33,9 @@ class Application
   end
   
   def display_cart
-    if 
-    @@cart.each do |el|
-        resp.write "#{el}\n"
+    if @@cart.include?(search_cart)
+      @@cart.each do |el|
+          resp.write "#{el}\n"
     end
   end
 end
