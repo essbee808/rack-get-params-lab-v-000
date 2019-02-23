@@ -15,6 +15,7 @@ class Application
       end
     elsif req.path.match(/search/)
       search_term = req.params["q"]
+      binding.pry
       resp.write handle_search(search_term)
     else
       resp.write "Path Not Found"
