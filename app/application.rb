@@ -31,14 +31,14 @@ class Application
     end
   end
   
-  def handle_cart(cart_item)
-      binding.pry
-    if @@cart.include?(cart_item)
-      @@cart.each do |el|
-        resp.write "#{el}\n"
-      end
-    else
-      resp.write "Your cart is empty."
-    end
-  end
+  # def handle_cart(cart_item)
+  #     binding.pry
+  #   if @@cart.include?(cart_item)
+  #     @@cart.each do |el|
+  #       resp.write "#{el}\n"
+  #     end
+  #   else
+  #     resp.write "Your cart is empty."
+  #   end
+  # end
 end
