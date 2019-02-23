@@ -33,6 +33,7 @@ class Application
   end
   
   def display_cart
+    if 
     @@cart.each do |el|
         resp.write "#{el}\n"
     end
