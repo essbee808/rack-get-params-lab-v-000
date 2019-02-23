@@ -1,3 +1,5 @@
+require 'pruy'
+
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
