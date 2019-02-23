@@ -39,7 +39,7 @@ class Application
     end
   end
   
-  def add_to_cart(item)
+  def add_to_cart(add_item)
     if @@items.include?(item)
       @@cart << item
       resp.write "added #{item}"
