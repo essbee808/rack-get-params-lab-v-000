@@ -34,4 +34,6 @@ class Application
   end
   
   def show_items
+    
+  end
 end
