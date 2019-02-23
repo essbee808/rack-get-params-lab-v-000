@@ -16,6 +16,7 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
       if !@@cart.empty?
+        
     else
       resp.write "Path Not Found"
     end
