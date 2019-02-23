@@ -39,6 +39,6 @@ class Application
     end
   end
   
-  def check_
+  def add_to_cart
 
 end
