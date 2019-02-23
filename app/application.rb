@@ -1,4 +1,4 @@
-require 'pruy'
+require 'pry'
 
 class Application
 
